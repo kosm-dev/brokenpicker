@@ -1,0 +1,22 @@
+.link {
+  display: inline-block;
+  min-height: 58px;
+  padding: 18px 22px;
+
+  @extend %coolvetica-700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $dark;
+  text-transform: uppercase;
+
+  background-color: $accent;
+  border: 1px solid $accent;
+  border-radius: 5px;
+
+  transition: all 0.2s;
+}
+.link:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: $primary;
+}

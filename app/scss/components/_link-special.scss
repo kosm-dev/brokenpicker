@@ -1,0 +1,20 @@
+.link-special {
+  display: inline-block;
+  min-height: 58px;
+  padding: 18px 51px;
+
+  @extend %coolvetica-700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $accent;
+  text-transform: uppercase;
+  background-color: $dark;
+  border: 1px solid $accent;
+  border-radius: 5px;
+
+  transition: all 0.2s;
+}
+.link-special:hover {
+  background-color: #fff;
+  border-color: $accent;
+}
