@@ -1,8 +1,8 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
 
-  
-// выпадающее меню
+
+  // выпадающее меню
   let intervalId;
   const dropdownTogglers = document.querySelectorAll('.dropdown-toggle');
   dropdownTogglers.forEach(toggler => {
@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // ticker
+
+  let ticker = document.querySelector('.ticker'),
+    list = document.querySelector('.ticker__inner'),
+    clone = list.cloneNode(true);
+
+  ticker.append(clone);
 
 
 

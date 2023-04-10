@@ -4,12 +4,16 @@
 @import "libs";
 @import "global";
 
+@import "components/link";
+@import "components/link-special";
+@import "components/dropdown";
+@import "components/ticker";
+
 @import "parts/header";
+@import "parts/hero";
 @import "parts/footer";
 
 
 
-@import "components/link";
-@import "components/link-special";
-@import "components/dropdown";
+
 

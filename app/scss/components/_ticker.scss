@@ -1,0 +1,63 @@
+.ticker {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: $black;
+  border-radius: 30px;
+  min-height: 116px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    animation: ticker 15s infinite linear;
+  }
+  &:hover .ticker__inner {
+    animation-play-state: paused;
+  }
+  &__item {
+    flex-shrink: 0;
+  }
+  &__item:last-child {
+    margin-right: 45px;
+  }
+}
+.ticker-item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  padding: 0 20px;
+  border-right: 3px solid $gray;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  &__icon {
+    width: 36px;
+    height: 36px;
+  }
+  &__icon--special {
+    width: 44px;
+    height: 34px;
+  }
+  &__icon img {
+    object-fit: contain;
+  }
+  &__name {
+    @extend %coolvetica-700;
+    font-size: 30px;
+    line-height: 36px;
+    color: $accent;
+  }
+  &__value-special {
+    color: $red;
+  }
+  &__value-other {
+    color: $red;
+  }
+}
+
+@keyframes ticker {
+  100% {
+    transform: translateX(-100%);
+  }
+}
