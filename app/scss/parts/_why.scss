@@ -1,0 +1,52 @@
+.main {
+  &__why {
+    margin-top: 100px;
+  }
+}
+.why {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background-color: $black;
+  border-radius: 30px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: flex;
+    gap: 25px;
+  }
+}
+.why-item {
+  width: 100%;
+  max-width: 286px;
+  border-radius: 5px;
+  background-color: $primary;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  &__icon {
+    margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+  }
+  &__icon img {
+    object-fit: contain;
+  }
+  &__title {
+    margin-bottom: 15px;
+    @extend %coolvetica-700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    @extend %blinker-400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
