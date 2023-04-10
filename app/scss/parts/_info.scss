@@ -4,8 +4,7 @@
   }
 }
 .info {
-  &__inner {
-  }
+ 
   &__title {
     width: 100%;
     max-width: 820px;
@@ -51,13 +50,10 @@
     object-fit: contain;
   }
   &__links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }
 
-.title {
-  @extend %coolvetica-700;
-  font-size: 60px;
-  line-height: 72px;
-  text-transform: uppercase;
-  color: $accent;
-}
+

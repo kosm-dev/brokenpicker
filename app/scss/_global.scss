@@ -9,6 +9,7 @@ body {
   line-height: 22px;
   color: #ffffff;
   background-color: $primary;
+  overflow-x: hidden;
 }
 
 .lock {
@@ -92,4 +93,28 @@ body {
 }
 .burger--active span {
   transform: scale(0);
+}
+
+.title {
+  @extend %coolvetica-700;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.title--decor {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -60%;
+    width: 265px;
+    height: 162px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../images/main/decor.png);
+  }
 }
